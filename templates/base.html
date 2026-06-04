@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title or "Moj maly archiv" }}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav class="top-nav">
+        <a class="brand" href="{{ url_for('home') }}">
+            <img class="brand-icon" src="{{ url_for('image_file', filename='ahoj.png') }}" alt="">
+            <span class="brand-name">Mia’s archive</span>
+        </a>
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('about') }}">About</a>
+            <a href="{{ url_for('blog') }}">Blog</a>
+            <a href="{{ url_for('library') }}">Library</a>
+            <a href="{{ url_for('database') }}">Databaza</a>
+        </div>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <p>Mia's archive &copy; 2026</p>
+        <div class="footer-icons">
+            <a href="https://www.strava.com/" aria-label="Strava">
+                <img src="https://www.google.com/s2/favicons?domain=strava.com&sz=32" alt="">
+            </a>
+            <a href="https://open.spotify.com/" aria-label="Spotify">
+                <img src="https://www.google.com/s2/favicons?domain=spotify.com&sz=32" alt="">
+            </a>
+            <a href="https://discord.com/" aria-label="Discord">
+                <img src="https://www.google.com/s2/favicons?domain=discord.com&sz=32" alt="">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
