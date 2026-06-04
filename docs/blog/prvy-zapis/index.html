@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="sk">
 <head>
     <meta charset="utf-8">
@@ -236,141 +236,24 @@ main {
     gap: 16px;
 }
 
-.library-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 18px;
-    margin-bottom: 20px;
-}
 
-.library-heading h1 {
-    margin: 0;
-}
 
-.library-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 0 0 22px;
-}
 
-.library-filters a {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 700;
-    padding: 8px 12px;
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 8px;
-    background: rgba(17, 24, 43, 0.65);
-}
 
-.library-filters a:hover,
-.library-filters a.active {
-    color: rgb(14, 14, 33);
-    background: rgba(255, 188, 226, 0.82);
-    border-color: white;
-}
 
-.book-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 20px;
-}
 
-.book-card {
-    display: grid;
-    grid-template-columns: 132px 1fr;
-    gap: 20px;
-    min-height: 245px;
-    padding: 20px;
-    background:
-        linear-gradient(135deg, rgba(255, 188, 226, 0.08), transparent 48%),
-        var(--panel-soft);
-    border: 1px solid rgba(255, 214, 107, 0.22);
-    border-radius: 8px;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
-}
 
-.book-info {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-}
 
-.book-card h2 {
-    margin: 12px 0 4px;
-    color: var(--gold);
-    font-size: 30px;
-    line-height: 1.08;
-}
 
-.book-card p {
-    margin: 0 0 8px;
-}
 
-.book-topline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-}
 
-.book-topline span {
-    color: var(--text);
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1;
-    padding: 6px 9px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 999px;
-    background: rgba(7, 9, 18, 0.42);
-}
 
-.book-author {
-    color: var(--text);
-    font-size: 20px;
-    font-weight: 700;
-}
 
-.book-finished {
-    color: var(--mint);
-    font-size: 17px;
-    font-weight: 700;
-}
 
-.book-summary {
-    color: var(--muted);
-    font-size: 18px;
-    line-height: 1.45;
-}
 
-.book-cover,
-.book-detail-cover {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: rgba(7, 9, 18, 0.74);
-}
 
-.book-cover {
-    aspect-ratio: 2 / 3;
-    box-shadow: 7px 9px 0 rgba(0, 0, 0, 0.22);
-}
 
-.book-cover-empty {
-    display: grid;
-    place-items: center;
-    color: var(--muted);
-    font-size: 16px;
-    text-align: center;
-}
 
-.book-detail-cover {
-    max-width: 260px;
-    margin: 20px 0;
-}
 
 .card {
     display: flex;
@@ -609,22 +492,7 @@ main {
     box-shadow: 0 0 0 3px rgba(255, 188, 226, 0.14);
 }
 
-.route-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 16px 0 20px;
-}
 
-.route-map {
-    display: block;
-    width: 100%;
-    min-height: 420px;
-    margin: 20px 0;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: rgba(7, 9, 18, 0.74);
-}
 
 .form-actions {
     display: flex;
@@ -734,24 +602,9 @@ main {
         padding: 42px 16px;
     }
 
-    .library-heading {
-        align-items: flex-start;
-        flex-direction: column;
-    }
 
-    .book-card {
-        grid-template-columns: 96px 1fr;
-        min-height: 0;
-        padding: 16px;
-    }
 
-    .book-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .book-card h2 {
-        font-size: 25px;
-    }
 
     .site-footer {
         align-items: center;
@@ -768,26 +621,35 @@ main {
             <span class="brand-name">Mia's archive</span>
         </a>
         <div class="nav-links"><a class="" href="../../index.html">Home</a>
-<a class="" href="../../about.html">About</a>
 <a class="active" href="../../blog/index.html">Blog</a>
-<a class="" href="../../library/index.html">Library</a>
-<a class="" href="../../database/index.html">Databaza</a></div>
+<a class="" href="../../recipes/index.html">Recipes</a></div>
     </nav>
     <main>
 <article class="page detail-page">
     <p class="meta">2026-06-03 / Diary</p>
     <h1>Moj prvy den pisanie blogu</h1>
-    <div class="detail-text rich-content"><p><b><font color="#8a1e5b">Toto je prvy dlhy zapis v archive. Sem mozes napisat cely text clanku, pokojne na viac odsekov.</font></b></p>
-<p>Kazdy novy odsek pridaj ako dalsi riadok do pola content. Je to jednoduche a nemusis riesit ziadnu databazu cez program.</p>
-<p>Ttototo oej prveee</p><img src="../../img/uploads/4392.jpeg" alt="">
-<p>dsadasda</p>
-<p>dasdasdasd</p>
-<p>asd</p>
-<p>as</p>
-<p><b>das</b></p>
-<p><b>das</b></p>
-<p>d</p>
-<p>asd</p>
+    <div class="detail-text rich-content"><p><b><font color="#8a1e5b">Toto je prvy dlhy zapis v archive. Sem mozes napisat cely text clanku, pokojne na viac odsekov.</font></b></p>
+
+<p>Kazdy novy odsek pridaj ako dalsi riadok do pola content. Je to jednoduche a nemusis riesit ziadnu databazu cez program.</p>
+
+<p>Ttototo oej prveee</p><img src="../../img/uploads/4392.jpeg" alt="">
+
+<p>dsadasda</p>
+
+<p>dasdasdasd</p>
+
+<p>asd</p>
+
+<p>as</p>
+
+<p><b>das</b></p>
+
+<p><b>das</b></p>
+
+<p>d</p>
+
+<p>asd</p>
+
 <img src="../../img/pixel-art-river-landscape-illustration.jpg" alt=""></div>
     <a class="read-more" href="../index.html">Back to blog</a>
 </article>
@@ -802,3 +664,5 @@ main {
     </footer>
 </body>
 </html>
+
+

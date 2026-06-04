@@ -2,7 +2,7 @@
 
 This is the restored static deployment from the `nove` commit.
 
-There is no JavaScript, Node server, Render config, or database needed for the deployed site.
+The deployed site is plain HTML/CSS and contains only the home page, blog, and recipes.
 
 GitHub Pages setup:
 
@@ -16,9 +16,7 @@ Main deployed pages live in:
 
 - `docs/index.html`
 - `docs/blog/`
-- `docs/library/`
+- `docs/recipes/`
 - `docs/recipe/`
-- `docs/route/`
-- `docs/book/`
 - `docs/img/`
 - `docs/fonts/`

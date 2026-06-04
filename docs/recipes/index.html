@@ -1,9 +1,9 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="sk">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About</title>
+    <title>Recipes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -23,7 +23,7 @@
 
 @font-face {
     font-family: "GNF";
-    src: url("./fonts/gnf/GNF.ttf") format("truetype");
+    src: url("../fonts/gnf/GNF.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -132,7 +132,7 @@ main {
     text-align: center;
     background:
         linear-gradient(rgba(7, 9, 18, 0.48), rgba(7, 9, 18, 0.82)),
-        url("./img/wp9221969-8-bit-japan-wallpapers.jpg") center / cover fixed;
+        url("../img/wp9221969-8-bit-japan-wallpapers.jpg") center / cover fixed;
 }
 
 .hero-title {
@@ -236,141 +236,24 @@ main {
     gap: 16px;
 }
 
-.library-heading {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 18px;
-    margin-bottom: 20px;
-}
 
-.library-heading h1 {
-    margin: 0;
-}
 
-.library-filters {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 0 0 22px;
-}
 
-.library-filters a {
-    color: var(--text);
-    text-decoration: none;
-    font-weight: 700;
-    padding: 8px 12px;
-    border: 1px solid rgba(255, 255, 255, 0.22);
-    border-radius: 8px;
-    background: rgba(17, 24, 43, 0.65);
-}
 
-.library-filters a:hover,
-.library-filters a.active {
-    color: rgb(14, 14, 33);
-    background: rgba(255, 188, 226, 0.82);
-    border-color: white;
-}
 
-.book-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 20px;
-}
 
-.book-card {
-    display: grid;
-    grid-template-columns: 132px 1fr;
-    gap: 20px;
-    min-height: 245px;
-    padding: 20px;
-    background:
-        linear-gradient(135deg, rgba(255, 188, 226, 0.08), transparent 48%),
-        var(--panel-soft);
-    border: 1px solid rgba(255, 214, 107, 0.22);
-    border-radius: 8px;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.28);
-}
 
-.book-info {
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-}
 
-.book-card h2 {
-    margin: 12px 0 4px;
-    color: var(--gold);
-    font-size: 30px;
-    line-height: 1.08;
-}
 
-.book-card p {
-    margin: 0 0 8px;
-}
 
-.book-topline {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7px;
-}
 
-.book-topline span {
-    color: var(--text);
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1;
-    padding: 6px 9px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 999px;
-    background: rgba(7, 9, 18, 0.42);
-}
 
-.book-author {
-    color: var(--text);
-    font-size: 20px;
-    font-weight: 700;
-}
 
-.book-finished {
-    color: var(--mint);
-    font-size: 17px;
-    font-weight: 700;
-}
 
-.book-summary {
-    color: var(--muted);
-    font-size: 18px;
-    line-height: 1.45;
-}
 
-.book-cover,
-.book-detail-cover {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: rgba(7, 9, 18, 0.74);
-}
 
-.book-cover {
-    aspect-ratio: 2 / 3;
-    box-shadow: 7px 9px 0 rgba(0, 0, 0, 0.22);
-}
 
-.book-cover-empty {
-    display: grid;
-    place-items: center;
-    color: var(--muted);
-    font-size: 16px;
-    text-align: center;
-}
 
-.book-detail-cover {
-    max-width: 260px;
-    margin: 20px 0;
-}
 
 .card {
     display: flex;
@@ -609,22 +492,7 @@ main {
     box-shadow: 0 0 0 3px rgba(255, 188, 226, 0.14);
 }
 
-.route-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin: 16px 0 20px;
-}
 
-.route-map {
-    display: block;
-    width: 100%;
-    min-height: 420px;
-    margin: 20px 0;
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    background: rgba(7, 9, 18, 0.74);
-}
 
 .form-actions {
     display: flex;
@@ -734,24 +602,9 @@ main {
         padding: 42px 16px;
     }
 
-    .library-heading {
-        align-items: flex-start;
-        flex-direction: column;
-    }
 
-    .book-card {
-        grid-template-columns: 96px 1fr;
-        min-height: 0;
-        padding: 16px;
-    }
 
-    .book-grid {
-        grid-template-columns: 1fr;
-    }
 
-    .book-card h2 {
-        font-size: 25px;
-    }
 
     .site-footer {
         align-items: center;
@@ -763,21 +616,31 @@ main {
 </head>
 <body>
     <nav class="top-nav">
-        <a class="brand" href="./index.html">
-            <img class="brand-icon" src="./img/ahoj.png" alt="">
+        <a class="brand" href="../index.html">
+            <img class="brand-icon" src="../img/ahoj.png" alt="">
             <span class="brand-name">Mia's archive</span>
         </a>
-        <div class="nav-links"><a class="" href="./index.html">Home</a>
-<a class="active" href="./about.html">About</a>
-<a class="" href="./blog/index.html">Blog</a>
-<a class="" href="./library/index.html">Library</a>
-<a class="" href="./database/index.html">Databaza</a></div>
+        <div class="nav-links"><a class="" href="../index.html">Home</a>
+<a class="" href="../blog/index.html">Blog</a>
+<a class="active" href="../recipes/index.html">Recipes</a></div>
     </nav>
     <main>
 <section class="page">
-    <h1>About</h1>
-    <p>Toto je miesto pre moj osobny blog, recepty, poznamky, trasy a vsetko, co si chcem ulozit na jedno mile miesto.</p>
-    <p>Staticka verzia funguje bez Python servera a je vhodna pre GitHub Pages.</p>
+    <div class="page-heading"><h1>Recipes</h1></div>
+    <div class="section-row"><h2>Recipes</h2></div>
+    <div class="grid"><article class="card">
+                <p class="meta">rychle jedlo</p>
+                <h3>Letne cestoviny</h3>
+                <p><strong>Ingrediencie:</strong> cestoviny, paradajky, bazalka, syr, olivovy olej</p>
+                <p>Super ked nechces varit nic zlozite.</p>
+                <div class="card-actions"><a class="read-more" href="../recipe/letne-cestoviny/index.html">Open recipe</a></div>
+            </article><article class="card">
+                <p class="meta">napoj</p>
+                <h3>Medovy caj</h3>
+                <p><strong>Ingrediencie:</strong> caj, med, citron</p>
+                <p>Pre pokojne vecery a blogovanie.</p>
+                <div class="card-actions"><a class="read-more" href="../recipe/medovy-caj/index.html">Open recipe</a></div>
+            </article></div>
 </section>
 </main>
     <footer class="site-footer">
@@ -790,3 +653,6 @@ main {
     </footer>
 </body>
 </html>
+
+
+
