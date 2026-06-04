@@ -6,7 +6,7 @@ const crypto = require("crypto");
 const ROOT = __dirname;
 const DATA_FILE = path.join(ROOT, "data", "database.json");
 const UPLOAD_DIR = path.join(ROOT, "img", "uploads");
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 const BLOG_CATEGORIES = ["Diary", "Philosophy", "Running", "Cycling", "Nutrition"];
 const RECIPE_TYPES = ["Fuel", "Main dish", "Breakfast", "Soup", "Drinks", "Sauce", "Dessert"];
