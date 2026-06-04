@@ -1,4 +1,13 @@
-:root {
+<!doctype html>
+<html lang="sk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>:root {
     --night: #070912;
     --navy: #11182b;
     --panel: rgba(16, 21, 36, 0.9);
@@ -14,7 +23,7 @@
 
 @font-face {
     font-family: "GNF";
-    src: url("/fonts/gnf/GNF.ttf") format("truetype");
+    src: url("../fonts/gnf/GNF.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -123,7 +132,7 @@ main {
     text-align: center;
     background:
         linear-gradient(rgba(7, 9, 18, 0.48), rgba(7, 9, 18, 0.82)),
-        url("/img/wp9221969-8-bit-japan-wallpapers.jpg") center / cover fixed;
+        url("../img/wp9221969-8-bit-japan-wallpapers.jpg") center / cover fixed;
 }
 
 .hero-title {
@@ -388,6 +397,7 @@ main {
 }
 
 .read-more {
+    align-items: center;
     display: inline-flex;
     width: fit-content;
     margin-top: 0;
@@ -749,3 +759,34 @@ main {
         padding: 10px 14px;
     }
 }
+</style>
+</head>
+<body>
+    <nav class="top-nav">
+        <a class="brand" href="../index.html">
+            <img class="brand-icon" src="../img/ahoj.png" alt="">
+            <span class="brand-name">Mia's archive</span>
+        </a>
+        <div class="nav-links"><a class="" href="../index.html">Home</a>
+<a class="" href="../about.html">About</a>
+<a class="" href="../blog/index.html">Blog</a>
+<a class="active" href="../library/index.html">Library</a>
+<a class="" href="../database/index.html">Databaza</a></div>
+    </nav>
+    <main>
+<section class="page">
+    <div class="library-heading"><h1>Library</h1></div>
+    <div class="library-filters"><a class="" href="../library/read.html">Read</a><a class="" href="../library/currently-reading.html">Currently reading</a><a class="active" href="../library/want-to-read.html">Want to read</a></div>
+    <div class="book-grid"></div>
+</section>
+</main>
+    <footer class="site-footer">
+        <p>Mia's archive &copy; 2026</p>
+        <div class="footer-icons">
+            <a href="https://www.strava.com/" aria-label="Strava"><img src="https://www.google.com/s2/favicons?domain=strava.com&sz=32" alt=""></a>
+            <a href="https://open.spotify.com/" aria-label="Spotify"><img src="https://www.google.com/s2/favicons?domain=spotify.com&sz=32" alt=""></a>
+            <a href="https://discord.com/" aria-label="Discord"><img src="https://www.google.com/s2/favicons?domain=discord.com&sz=32" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

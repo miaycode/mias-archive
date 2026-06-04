@@ -1,26 +1,24 @@
 # Mia's archive
 
-This is a simple static site. No JavaScript, server, or database is needed.
+This is the restored static deployment from the `nove` commit.
 
-Edit these files directly in VS Code:
+There is no JavaScript, Node server, Render config, or database needed for the deployed site.
 
-- `index.html` - home page and latest posts
-- `blog.html` - blog list
-- `recipes.html` - recipes and routes list
-- `library.html` - books list
-- `pages/blog/` - full blog posts
-- `pages/recipes/` - full recipes
-- `pages/routes/` - full route pages
-- `pages/books/` - full book pages
-- `static/style.css` - design
-- `img/` - images
+GitHub Pages setup:
 
-When you add a new post, recipe, route, or book:
+- Branch: `main`
+- Source folder: `/docs`
+- Entry page: `docs/index.html`
 
-1. Copy one existing detail page from the matching folder in `pages/`.
-2. Rename it, for example `pages/blog/moj-novy-clanok.html`.
-3. Edit the text inside that file.
-4. Add a matching card/link on `blog.html`, `recipes.html`, or `library.html`.
-5. If it should appear on the home page, add it to `index.html` too.
+The root `index.html` only redirects to `docs/`, so the site still opens if GitHub Pages is pointed at the repository root.
 
-Open `index.html` directly in a browser. On GitHub Pages, use the `main` branch and the project root as the publishing source.
+Main deployed pages live in:
+
+- `docs/index.html`
+- `docs/blog/`
+- `docs/library/`
+- `docs/recipe/`
+- `docs/route/`
+- `docs/book/`
+- `docs/img/`
+- `docs/fonts/`
