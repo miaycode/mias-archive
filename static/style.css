@@ -14,7 +14,7 @@
 
 @font-face {
     font-family: "GNF";
-    src: url("/fonts/gnf/GNF.ttf") format("truetype");
+    src: url("../fonts/gnf/GNF.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
 }
@@ -115,6 +115,10 @@ main {
     background: transparent;
 }
 
+.nav-links a.active {
+    color: var(--mint);
+}
+
 .hero {
     min-height: 100vh;
     display: grid;
@@ -123,7 +127,7 @@ main {
     text-align: center;
     background:
         linear-gradient(rgba(7, 9, 18, 0.48), rgba(7, 9, 18, 0.82)),
-        url("/img/wp9221969-8-bit-japan-wallpapers.jpg") center / cover fixed;
+        url("../img/wp9221969-8-bit-japan-wallpapers.jpg") center / cover fixed;
 }
 
 .hero-title {
